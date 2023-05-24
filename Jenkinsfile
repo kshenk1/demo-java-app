@@ -16,7 +16,8 @@ pipeline {
                    publishHTML([
                       allowMissing: false, 
                       alwaysLinkToLastBuild: false, 
-                      keepAll: false, 
+                      keepAll: false,
+                      reportDir: '',
                       reportFiles: 'index.html', 
                       reportName: 'Serenity Report', 
                       reportTitles: '', 
