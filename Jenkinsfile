@@ -17,7 +17,6 @@ pipeline {
                       allowMissing: false, 
                       alwaysLinkToLastBuild: false, 
                       keepAll: false, 
-                      reportDir: 'lib/target/site/serenity/', 
                       reportFiles: 'index.html', 
                       reportName: 'Serenity Report', 
                       reportTitles: '', 
