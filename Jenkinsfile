@@ -4,6 +4,12 @@ pipeline {
     }
  
     stages {
+        stage('WinPing') {
+            agent { label 'windows' }
+            steps {
+                powershell "mkdir C:\\this-is-a-test"
+            }
+        }
         stage('Build') {
             steps {
                 sh "gradle build"
